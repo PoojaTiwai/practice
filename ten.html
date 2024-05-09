@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function sortByLength(arr) {
+    // Custom comparison function to sort strings based on their length
+    function compareLength(a, b) {
+        return a.length - b.length;
+    }
+
+    // Sort the array using the custom comparison function
+    return arr.sort(compareLength);
+}
+
+// Example usage:
+let array = ["apple", "banana", "orange", "kiwi", "strawberry"];
+let sortedArray = sortByLength(array);
+console.log(sortedArray); // Output: ["kiwi", "apple", "banana", "orange", "strawberry"]
+ 
+    </script>
+</body>
+</html>
